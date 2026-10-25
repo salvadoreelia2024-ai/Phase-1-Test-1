@@ -1,0 +1,13 @@
+{
+  "name": "wti-observatory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Snapshot-based WTI probability research dashboard",
+  "scripts": {
+    "check": "node --check public/app.js",
+    "test": "python3 -m unittest discover -s tests -v",
+    "serve": "python3 -m http.server 5173 --directory public",
+    "test:ui": "node tests/frontend-smoke.mjs"
+  }
+}
